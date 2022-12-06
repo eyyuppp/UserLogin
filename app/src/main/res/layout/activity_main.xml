@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/constraitlayaut"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="212dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_big" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="33dp"
+        android:text="Hoşgeldiniz Efendim"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciAdiLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_KayitOlLogin"
+        android:layout_width="118dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="107dp"
+        android:background="@drawable/buton_arkaplan"
+        android:text="ÜYE OL"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/parolaLogin"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/edittext_arkaplan"
+        android:drawableLeft="@drawable/kilit"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/yazırengi"
+        app:layout_constraintBottom_toTopOf="@+id/btn_girisYapLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_girisYapLogin"
+        android:layout_width="118dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/buton_arkaplan"
+        android:text="GİRİŞ YAP"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_KayitOlLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/kullaniciAdiLogin"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/edittext_arkaplan"
+        android:drawableLeft="@drawable/logo_small"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/yazırengi"
+        app:layout_constraintBottom_toTopOf="@+id/parolaLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
